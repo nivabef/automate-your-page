@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--Notes so far, after completing Stage 2, Work Session 5.-->
+<head> 
+  <title>Introduction to Programming Nanodegree Notes</title>   
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="section">
+    <h1>Table of Contents</h1>
+    <div class="toc-sub">
+      <div class="toc-lesson">
+        <a href="#lesson-1">Stage One || Lesson One: The basics of the web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">Thinking like a programmer</a></li>
+          <li><a href="#lesson-1-2">HTML: hypertext markup language</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        <a href="#lesson-2">Stage One || Lesson Two: Creating a structured document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">House analogy</a></li>
+          <li><a href="#lesson-2-2">HTML language</a></li>
+          <li><a href="#lesson-2-3">DOM: document object model</a></li>
+          <li><a href="#lesson-2-4">CSS</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        <a href="#lesson-3">Stage One || Lesson Three: Adding CSS style to HTML structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">Avoiding repetition</a></li>
+          <li><a href="#lesson-3-2">CSS: cascading style sheets</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="toc-sub">
+      <div class="toc-lesson">
+        <a href="#lesson-4">Stage Two || Lesson Four: Introduction to "serious" programming</a>
+        <ul>
+          <li><a href="#lesson-4-1">Programming</a></li>
+          <li><a href="#lesson-4-2">Python</a></li>
+          <li><a href="#lesson-4-3">Why use programming languages?</a></li>
+          <li><a href="#lesson-4-4">Python expressions</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        <a href="#lesson-5">Stage Two || Lesson Five: Variables and strings</a>
+        <ul>
+          <li><a href="#lesson-5-1">Variables</a></li>
+          <li><a href="#lesson-5-2">Strings</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        <a href="#lesson-6">Stage Two || Lesson Six: Functions (aka procedures)</a>
+        <ul>
+          <li><a href="#lesson-6-1">What are they?</a></li>
+          <li><a href="#lesson-6-2">Using paramaters to define the output of a function</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="toc-sub">
+      <div class="toc-lesson">
+        <a href="#lesson-7">Stage Two || Lesson Seven: If and while</a>
+        <ul>
+          <li><a href="#lesson-7-1">Boolean values</a></li>
+          <li><a href="#lesson-7-2">Types of procedures</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        <a href="#lesson-8">Stage Two || Lesson Eight: Structured data</a>
+        <ul>
+          <li><a href="#lesson-8-1">Lists</a></li>
+          <li><a href="#lesson-8-2">Changing lists</a></li>
+          <li><a href="#lesson-8-3">Other operations with lists</a></li>
+        </ul>
+      </div>
+      <div class="toc-lesson">
+        Coming soon.
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h1>Intro to Programming</h1>
+    <div class="lesson">
+      <h2 id="lesson-1">Lesson One: The basics of the web and HTML</h2>
+      <div id="lesson-1-1">
+        <h3>Thinking like a programmer</h3>
+        <ol>
+          <li> Procedural thinking: step 1, step 2, step 3</li>
+          <li>Abstract thinking: 1+1=2, whether is is apples or oranges or houses you're counting.</li>
+          <li>Technical empathy: Thinking like a computer.</li>
+          <li>Systems thinking: Breaking down big ideas into pieces.</li>
+        </ol>
+      </div>
+      <div id="lesson-1-2">
+        <h3>HTML: hypertext markup language</h3>
+        <p>
+          HTML elements are pieces of HTML documents. They are indicated with HTML tags.
+        </p>
+        <p>
+          Unlike humans, computers can't mentally fill in gaps if there are errors or information missing.
+          A human has to be very careful there are no mistakes when giving directions to a computer.
+        </p>
+        <p>
+          HTML elements are either inline or block. Block elements form an invisible box around the content inside them.
+        </p>
+      </div>  
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-2">Lesson Two: Creating a structured document with HTML</h2>
+      <div id="lesson-2-1">
+        <h3>House analogy</h3>
+        <p>
+          HTML files - the layout of the house, like where the walls are
+        </p>
+        <p>
+          CSS files - the color of the carpeting, how the house is decorated
+        </p>
+        <p>
+          Javascript - interactive elements of the house, such at the TV remote and garage door opener
+        </p>
+      </div>
+      <div id="lesson-2-2">
+        <h3>HTML language</h3>
+        <p>
+          HTML is a language with syntax and rules. It uses tags, which are like elements of a tree.
+        </p>
+      </div>
+      <div id="lesson-2-3">
+        <h3>DOM: document object model</h3>
+        <p>
+          DOM is a standard convention for representing and interacting with elements in HTML.
+        </p>
+        <p>
+          Each HTML tag creates an element in the DOM that the browser uses to display the page.
+        </p>
+      </div>
+      <div id="lesson-2-4">
+        <h3>CSS</h3>
+        <p>
+          CSS allows you to use syntax and rules to change how elements look on the page.
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-3">Lesson Three: Adding CSS style to HTML structure</h2>
+      <div id="lesson-3-1">
+        <h3>Avoiding repetition</h3>
+        <p>
+          CSS lets programmers avoid repetition by assigning certain styles to all instances of a specific tag in the HTML.
+        </p>
+        <p>
+          This also allows programmers to avoid errors. For example, using CSS to make all text in h1 tags red, you won't accidentally make one h1 tag blue and make your web page inconsistent. 
+        </p>
+      </div>
+      <div id="lesson-3-2">  
+        <h3>CSS: cascading style sheets</h3>
+        <p>
+          Cascading means that the most specific rule is applied to every element.
+        </p>
+        <p> 
+          In real life, national laws > state laws > municipality laws > your household rules. If they were cascading, your household rules would also apply to national law.
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-4">Lesson Four: Introduction to "serious" programming</h2>
+      <div id="lesson-4-1">
+        <h3>Programming</h3>
+        <p>
+          Programming is a core of computer science
+        </p>
+        <p>
+          A toaster is designed to do only one thing. A computer can be programmed to do anything. It is a universal machine.
+        </p>
+        <p>
+          A computer uses a precise series of steps. It can execute billions of steps in a second.
+        </p>
+      </div>
+      <div id="lesson-4-2">  
+        <h3>Python</h3>
+        <p>
+          Python is an interpreter. It takes what you input and translates is for a computer.
+        </p>
+        <p>
+          Examples of thinking like a programmer using Python:
+        </p>
+          <ol>
+            <li> Procedural thinking: Python follows instructions in your code.</li>
+            <li>Technological empathy: The process of writing the program, it getting interpreted by Python and following instructions in its code.</li>
+            <li>Abstract thinking: Thinking of a Python program, a Python interpreter and a web browses as different version of the same thing.</li>
+          </ol>
+      </div>
+      <div id="lesson-4-3"> 
+        <h3>Why use programming languages?</h3>
+        <p>
+          In natural languages like English there is too much ambiguity. A computer cannot interpret this.
+        </p>
+        <p>
+          Natural languages are verbose.
+        </p>
+      </div>
+      <div id="lesson-4-4"> 
+        <h3>Python expressions</h3>
+        <p>
+          Expressions are legal statements in Python.
+        </p> 
+      </div>1
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-5">Lesson Five: Variables and strings</h2>
+      <div id="lesson-5-1">
+        <h3>Variables</h3>
+        <p>
+          Variables are names given to values. For example, you could assign "35" to the variable "my_age". The next time the variable "my_age" is mentioned, the computer knows that it equals 35.
+        </p>
+      </div>
+      <div id="lesson-5-2">
+        <h3>Strings</h3>
+        <p>
+          Strings are specific lines of text. They are assigned to variables, just like numbers are. For example, a variable could contain the text "This is an example of a string." Strings can be assigned by putting the text into either single or double quotation marks.
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-6">Lesson Six: Functions (aka procedures)</h2>
+      <div id="lesson-6-1">
+        <h3>What are they?</h3>
+        <p>
+          Functions/procedures take input and then do something with the input to produce output. For example, if you want the function to add two numbers together, you would input the two numbers and then the function would work its magic to output the sum of the numbers.
+        </p>
+      </div>
+      <div id="lesson-6-2">
+        <h3>Using paramaters to define the output of a function</h3>
+        <p>
+          To make a function that simply adds two numbers together and outputs the sum, you could do this:
+        </p>
+        <p>
+          def sum(x,y): <br>
+          <span class="indent">answer = x + y</span> <br>
+          <span class="indent">return answer</span>
+        </p>
+        <p>
+          This returns (outputs) x + y. You could also just code it like this:
+        </p>
+        <p>
+          def sum(x,y): <br>
+          <span class="indent">return x + y</span>
+        </p>
+        <p>
+          That would also return (output) x + y.
+        </p>
+        <p>
+          You must use a return statement. Otherwise, the function won't define an output.
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-7">Lesson Seven: If and while</h2>
+      <div id="lesson-7-1">
+        <h3>Boolean values</h3>
+        <p>
+          There are two boolean values: True and False. A computer program often has to decide the boolean value of a statement.
+        </p>
+      </div>
+      <div id="lesson-7-2">
+        <h3>Types of procedures</h3>
+        <p>
+          If procedures. This one returns the absolute value of a number by changing the sign of the number only if it's negative.      
+        </p>
+        <p class="italicized">
+          if x&lt;0:<br>
+          <span class="indent">x=-x</span><br>
+          return x
+        </p><br>
+        <p>
+          Else procedures. With these, if the first statement is False, the computer will perform the second instruction.
+        </p>
+        <p class ="italicized">
+          if (test expression):<br>
+          <span class="indent">(Do this thing)</span><br>
+          else:<br>
+          <span class="indent">(Do this other thing)</span>
+        </p><br>
+        <p>
+          Or procedures. The value comes back True if either one of the two things is True.
+        </p>
+        <p class="italicized">
+          if (expression 1) or (expression 2):<br>
+          <span class="indent">(Do this thing)</span>
+        </p><br>
+        <p>
+          Loops. The cycle will keep looking until the value doesn't meet the statement.
+        </p>
+        <p class="italicized">
+          i=0<br>
+          while i&lt;5:<br>
+          <span class="indent">print i<br>
+            i=i+1</span>
+        </p><br>
+        <p>
+          Breaks. This is a way to stop the loop even when the test condition is true.
+        </p>
+        <p class="italicized">
+          i=1<br>
+          while True:<br>
+          <span class="indent">if i>n:<br>
+            <span class="indent">break</span><br>
+            print i<br>
+            i=i+1</span>
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-8">Lesson Eight: Structured data</h2>
+      <div id="lesson-8-1">
+        <h3>Lists</h3>
+        <p>
+          A list is a sequence of anything, unlike strings which can only be a sequence of characters. The sequence could be characters, numbers, strings or other lists.
+        </p>
+        <p>
+          list examples:<br>
+          p=['y','a','b','b','a']<br>
+          colors=['red','yellow','green','blue']<br>
+          numbers=[1,2,3,4,5,6]
+        </p>
+        <p>
+          Lists can be nested within other lists and can be of mixed type:<br>
+          mixed_list=['yellow', 4, ['f', 'table']]
+        </p>
+      </div>
+      <div id="lesson-8-2">
+        <h3>Changing lists</h3>
+        <p>
+          Mutation. This would change the item indexed at list position 0 and leave the rest of the list items as they are:<br>
+          p=['h','e','l','l','o']<br>
+          p[0]='y'      
+        </p>
+        <p>
+          Aliasing is referring to the same thing by two different names. For example, if you made p=q, then p and q would become the same. If you later changed the value of one, it would change the value of both.
+        </p>
+        <p>
+          Appending items to lists:<br>
+          stooges=['Moe','Larry','Curly']<br>
+          stooges.append('Shemp') <br> 
+          <em>This would add 'Shemp' to the end of the stooges list, so it now contains four items.</em>
+        </p>  
+      </div>  
+      <div id="lesson-8-3">
+        <h3>Other operations with lists</h3>
+        <p>
+          Finding the length of a list (or a string):<br>
+          len([0,4]) <br>  
+          <em>2</em><br>
+          len("Udacity") <br>  
+          <em>7</em><br>
+          p=[5,3,9,7,0]<br>
+          len(p) <br>  
+          <em>5</em>     
+        </p>
+        <p>
+          Loops on lists:<br>
+          def print_all_elements(p):<br>
+          <span class="indent">for e in p:<br>
+          <span class="indent">print e</span></span><br>
+          mylist=[1,2,[3,4]]<br>
+          print_all_elements(mylist)<br>
+          <em>1<br>2<br>[3,4]</em>
+        </p>
+        <p>
+          Index:<br>
+          p=[1,2,2,2,3]<br>
+          print p.index(2)<br>
+          <em>1 (the location of the first instance of 2 in the list)</em>
+        </p>
+        <p>
+          In:<br>
+          p=[0,1,2]<br>
+          print 3 in p<br>
+          <em>False (3 is not contained in list p.)</em><br>
+          print 2 in p<br>
+          <em>True (2 is contained in list p.)</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
